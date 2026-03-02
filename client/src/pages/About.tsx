@@ -1,39 +1,73 @@
 import { motion } from "framer-motion";
-import { Target, Lightbulb, Heart, Shield, Globe2 } from "lucide-react";
+import { Link } from "wouter";
+import { Target, Lightbulb, Shield, Heart, CheckCircle2, ArrowRight } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
-const fadeIn = {
-  initial: { opacity: 0, y: 20 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6 }
-};
+const values = [
+  {
+    title: "Integrity",
+    desc: "Ethical recruitment and fair treatment at every step.",
+    icon: <Shield className="w-5 h-5" />,
+  },
+  {
+    title: "Inclusion",
+    desc: "Creating opportunities for all communities.",
+    icon: <Heart className="w-5 h-5" />,
+  },
+  {
+    title: "Excellence",
+    desc: "World-class service delivery, always.",
+    icon: <Target className="w-5 h-5" />,
+  },
+  {
+    title: "Impact",
+    desc: "Measurable, meaningful social change.",
+    icon: <Lightbulb className="w-5 h-5" />,
+  },
+  {
+    title: "Accountability",
+    desc: "Clear ownership, transparent reporting, and measurable outcomes.",
+    icon: <CheckCircle2 className="w-5 h-5" />,
+  },
+  {
+    title: "Empowerment",
+    desc: "Equipping people with skills and opportunities for long-term success.",
+    icon: <CheckCircle2 className="w-5 h-5" />,
+  },
+];
+
+const proofItems = [
+  "POPIA & GDPR-aligned Operations",
+  "ISO-aligned Quality Control Standards",
+  "Ethical Recruitment Through Trusted Partnerships",
+];
 
 export default function About() {
   return (
     <div className="w-full pt-20">
-      {/* Page Header */}
       <section className="bg-muted py-20 lg:py-32 border-b border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.h1 
+          <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             className="text-4xl md:text-6xl font-bold font-display tracking-tight text-foreground mb-6"
           >
-            Our Story & Mission
+            About Afri-Rise
           </motion.h1>
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
             className="text-xl text-muted-foreground max-w-3xl mx-auto"
           >
-            Afri-Rise was founded on a simple premise: African talent is world-class, and connecting them to global opportunities changes everything.
+            Business with purpose. We build high-performing teams for global clients while creating inclusive employment and ethical international opportunities.
           </motion.p>
         </div>
       </section>
 
-      {/* The Story Section */}
-      <section className="py-20 lg:py-28">
+      <section className="py-20 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <motion.div
@@ -42,102 +76,143 @@ export default function About() {
               viewport={{ once: true }}
               className="space-y-6"
             >
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground">Bridging the Gap</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground">Cape Town Roots, Global Standards</h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                In an increasingly connected world, businesses are constantly seeking reliable, highly-skilled partners to manage operations and provide critical staffing. Meanwhile, the African continent is brimming with educated, multilingual professionals eager for global opportunities.
+                Afri-Rise is a Cape Town-based private company delivering business process outsourcing and healthcare recruitment services to clients in insurance, financial services, healthcare, and related sectors.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Afri-Rise bridges this gap. We provide a managed, ethical pipeline connecting Western enterprises and healthcare systems with top-tier African candidates. From comprehensive BPO operations to deploying registered nurses, we ensure compliance, quality, and mutual growth.
+                Alongside service delivery, we invest in soft-skills training, call-centre readiness, and exam preparation pathways that open dignified employment for youth, people with disabilities, and individuals in rehabilitation programs.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Through trusted partnerships, including Silverscope Healthcare Staffing, we support ethical nurse placement pathways to Ireland, Australia, and New Zealand.
               </p>
             </motion.div>
-            
+
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               className="relative rounded-2xl overflow-hidden shadow-2xl"
             >
-              {/* group of professional business people smiling meeting */}
-              <img 
-                src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=1000" 
-                alt="Afri-Rise Team"
+              <img
+                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1600"
+                alt="African team collaboration in a business setting"
                 className="w-full h-auto object-cover"
+                onError={(e) => {
+                  e.currentTarget.src = "https://images.unsplash.com/photo-1573496528388-2c5e0088d40f?auto=format&fit=crop&q=80&w=1600";
+                  e.currentTarget.onerror = null;
+                }}
               />
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Mission & Vision */}
-      <section className="py-20 bg-primary text-primary-foreground">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative py-20 text-primary-foreground overflow-hidden">
+        <img
+          src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=2200"
+          alt="Team collaborating on mission and long-term strategy"
+          className="absolute inset-0 w-full h-full object-cover"
+          loading="lazy"
+          onError={(e) => {
+            e.currentTarget.src = "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=2200";
+            e.currentTarget.onerror = null;
+          }}
+        />
+        <div className="absolute inset-0 bg-black/78" />
+        <div className="absolute inset-0 bg-gradient-to-tr from-primary/30 via-black/35 to-accent/20 mix-blend-multiply" />
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="bg-white/10 p-10 rounded-3xl backdrop-blur-sm border border-white/20"
+              className="bg-black/55 p-10 rounded-3xl backdrop-blur-md border border-white/30 text-white shadow-2xl"
             >
               <Target className="w-12 h-12 text-accent mb-6" />
               <h3 className="text-2xl font-bold font-display mb-4">Our Mission</h3>
-              <p className="text-lg text-primary-foreground/90 leading-relaxed">
-                To deliver exceptional BPO and specialized staffing services by empowering Africa's brightest minds, driving operational excellence and growth for our global partners.
+              <p className="text-lg text-white/90 leading-relaxed">
+                To uplift communities and change lives by creating inclusive employment, world-class skills, and ethical international opportunities while strengthening African healthcare systems.
               </p>
             </motion.div>
-            
-            <motion.div 
+
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="bg-white/10 p-10 rounded-3xl backdrop-blur-sm border border-white/20"
+              className="bg-black/55 p-10 rounded-3xl backdrop-blur-md border border-white/30 text-white shadow-2xl"
             >
               <Lightbulb className="w-12 h-12 text-accent mb-6" />
               <h3 className="text-2xl font-bold font-display mb-4">Our Vision</h3>
-              <p className="text-lg text-primary-foreground/90 leading-relaxed">
-                To be the foremost gateway for ethical international recruitment and outsourcing in Africa, recognized globally for integrity, quality, and transformative social impact.
+              <p className="text-lg text-white/90 leading-relaxed">
+                To become Africa&apos;s leading tech-enabled BPO provider, blending operational excellence with transformative social impact.
               </p>
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Core Values */}
+      <section className="py-20 lg:py-24 bg-background border-y border-border/50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-14">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Proof & Trust</h2>
+            <p className="text-lg text-muted-foreground">Built on compliance, quality, and ethical delivery standards.</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {proofItems.map((item) => (
+              <div key={item} className="rounded-xl border border-border/60 bg-card p-5 flex items-start gap-3">
+                <CheckCircle2 className="w-5 h-5 text-primary mt-0.5" />
+                <p className="font-medium">{item}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 lg:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Our Core Values</h2>
-            <p className="text-lg text-muted-foreground">The principles that guide everything we do.</p>
+            <p className="text-lg text-muted-foreground">The principles that guide every team and every client engagement.</p>
           </div>
-          
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              { title: "Excellence", icon: <Target />, desc: "We are committed to delivering the highest quality of service and talent, exceeding partner expectations." },
-              { title: "Ethical Impact", icon: <Heart />, desc: "We prioritize fair wages, professional development, and positive community upliftment." },
-              { title: "Integrity", icon: <Shield />, desc: "Transparency, compliance, and honesty are the foundations of all our business relationships." },
-              { title: "Global Perspective", icon: <Globe2 />, desc: "We embrace diversity and foster cross-cultural understanding in every interaction." },
-            ].map((val, idx) => (
-              <motion.div 
-                key={idx}
+            {values.map((value, idx) => (
+              <motion.div
+                key={value.title}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: idx * 0.1 }}
+                transition={{ delay: idx * 0.06 }}
               >
                 <Card className="h-full border-border/50 shadow-sm hover:shadow-md transition-shadow">
                   <CardHeader>
-                    <div className="w-12 h-12 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-4">
-                      {val.icon}
+                    <div className="w-11 h-11 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-4">
+                      {value.icon}
                     </div>
-                    <CardTitle>{val.title}</CardTitle>
+                    <CardTitle>{value.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-muted-foreground">{val.desc}</p>
+                    <p className="text-muted-foreground">{value.desc}</p>
                   </CardContent>
                 </Card>
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-muted text-center">
+        <div className="max-w-3xl mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-6">Partner With Afri-Rise</h2>
+          <p className="text-lg text-muted-foreground mb-8">
+            Build an ethical, high-performance delivery model with a partner focused on quality, compliance, and measurable impact.
+          </p>
+          <Link href="/contact" className={cn(buttonVariants({ size: "lg" }), "gap-2")}>
+            Request Proposal <ArrowRight className="w-4 h-4" />
+          </Link>
         </div>
       </section>
     </div>

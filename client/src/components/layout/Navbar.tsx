@@ -79,7 +79,7 @@ export function Navbar() {
               href="/contact"
               className={buttonVariants({ variant: "default", size: "lg" })}
             >
-              Get a Quote
+              Request Proposal
             </Link>
           </nav>
 
@@ -126,7 +126,7 @@ export function Navbar() {
                   href="/contact"
                   className={cn(buttonVariants({ variant: "default", size: "lg" }), "w-full justify-center")}
                 >
-                  Get a Quote
+                  Request Proposal
                 </Link>
               </div>
             </div>

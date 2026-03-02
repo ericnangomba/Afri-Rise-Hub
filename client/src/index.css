@@ -20,27 +20,27 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222 47% 11%;
     
-    /* Trust-inspiring Deep Ocean Blue */
-    --primary: 215 80% 30%;
+    /* Brand Orange #f48009 */
+    --primary: 30 93% 50%;
     --primary-foreground: 0 0% 100%;
     
-    /* Growth/Impact Emerald Green */
-    --secondary: 150 60% 35%;
+    /* Brand Orange #f48009 */
+    --secondary: 30 93% 50%;
     --secondary-foreground: 0 0% 100%;
     
     --muted: 210 20% 94%;
     --muted-foreground: 215 16% 47%;
     
-    /* Warm Inclusive Sunburst Orange */
-    --accent: 38 92% 55%;
-    --accent-foreground: 222 47% 11%;
+    /* Brand Orange #f48009 */
+    --accent: 30 93% 50%;
+    --accent-foreground: 0 0% 100%;
     
     --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214 20% 88%;
     --input: 214 20% 88%;
-    --ring: 215 80% 30%;
+    --ring: 30 93% 50%;
 
     --radius: 0.75rem;
   }
@@ -55,24 +55,24 @@
     --popover: 222 47% 11%;
     --popover-foreground: 40 33% 98%;
     
-    --primary: 215 80% 60%;
-    --primary-foreground: 222 47% 8%;
+    --primary: 30 93% 50%;
+    --primary-foreground: 0 0% 100%;
     
-    --secondary: 150 60% 45%;
-    --secondary-foreground: 222 47% 8%;
+    --secondary: 30 93% 50%;
+    --secondary-foreground: 0 0% 100%;
     
     --muted: 215 20% 20%;
     --muted-foreground: 215 20% 75%;
     
-    --accent: 38 92% 55%;
-    --accent-foreground: 222 47% 8%;
+    --accent: 30 93% 50%;
+    --accent-foreground: 0 0% 100%;
     
     --destructive: 0 62% 30%;
     --destructive-foreground: 40 33% 98%;
 
     --border: 215 30% 20%;
     --input: 215 30% 20%;
-    --ring: 215 80% 60%;
+    --ring: 30 93% 50%;
   }
 }
 

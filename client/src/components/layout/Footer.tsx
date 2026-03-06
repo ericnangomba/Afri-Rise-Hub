@@ -72,7 +72,18 @@ export function Footer() {
         </div>
 
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-gray-500 text-sm">© {new Date().getFullYear()} Afri-Rise. All rights reserved.</p>
+          <p className="text-gray-500 text-sm">&copy; {new Date().getFullYear()} Afri-Rise. All rights reserved.</p>
+          <p className="text-gray-500 text-sm">
+            Developed by{" "}
+            <a
+              href="https://jertinetech.42web.io"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-300 hover:text-white transition-colors"
+            >
+              Jertine Tech
+            </a>
+          </p>
           <div className="flex gap-6">
             <Link href="#" className="text-gray-500 hover:text-white text-sm transition-colors">
               Privacy Policy
@@ -86,3 +97,5 @@ export function Footer() {
     </footer>
   );
 }
+
+

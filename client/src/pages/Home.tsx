@@ -366,8 +366,8 @@ export default function Home() {
             >
               <div className="relative isolate overflow-hidden rounded-2xl border border-border/60 shadow-sm">
                 <img
-                  src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80&w=1600"
-                  alt="Afri-Rise African professionals collaborating in a strategy session"
+                  src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=1600"
+                  alt="Afri-Rise team collaborating to build inclusive employment opportunities"
                   className="w-full h-64 object-cover saturate-110 contrast-105 brightness-95 sepia-[0.08]"
                   loading="lazy"
                   onError={(e) => {

@@ -137,8 +137,8 @@ export default function Contact() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-foreground">Phone</h4>
-                      <a href="tel:+27820447004" className="text-muted-foreground mt-1 block hover:text-primary transition-colors">
-                        +27 82 044 7004
+                      <a href="tel:+27629683677" className="text-muted-foreground mt-1 block hover:text-primary transition-colors">
+                        +27 62 968 3677
                       </a>
                     </div>
                   </div>
@@ -149,8 +149,8 @@ export default function Contact() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-foreground">Email</h4>
-                      <a href="mailto:info@afri-rise.co.za" className="text-muted-foreground mt-1 block hover:text-primary transition-colors">
-                        info@afri-rise.co.za
+                      <a href="mailto:info@afririse.co.za" className="text-muted-foreground mt-1 block hover:text-primary transition-colors">
+                        info@afririse.co.za
                       </a>
                     </div>
                   </div>
@@ -236,7 +236,7 @@ export default function Contact() {
                           <FormItem>
                             <FormLabel>Phone Number</FormLabel>
                             <FormControl>
-                              <Input type="tel" placeholder="+27 82 044 7004" className="h-12" {...field} value={field.value || ""} />
+                              <Input type="tel" placeholder="+27 62 968 3677" className="h-12" {...field} value={field.value || ""} />
                             </FormControl>
                             <FormMessage />
                           </FormItem>

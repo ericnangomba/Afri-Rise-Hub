@@ -61,11 +61,11 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3 text-gray-400 text-sm">
                 <Phone className="w-5 h-5 text-primary shrink-0" />
-                <span>+27 82 044 7004</span>
+                <span>+27 62 968 3677</span>
               </li>
               <li className="flex items-center gap-3 text-gray-400 text-sm">
                 <Mail className="w-5 h-5 text-primary shrink-0" />
-                <span>info@afri-rise.co.za</span>
+                <span>info@afririse.co.za</span>
               </li>
             </ul>
           </div>

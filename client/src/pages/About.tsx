@@ -84,7 +84,7 @@ export default function About() {
                 Alongside service delivery, we invest in soft-skills training, call-centre readiness, and exam preparation pathways that open dignified employment for youth, people with disabilities, and individuals in rehabilitation programs.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Through trusted partnerships, including Silverscope Healthcare Staffing, we support ethical nurse placement pathways to Ireland, Australia, and New Zealand.
+                Through trusted partnerships, including Inno-tel and Silverscope Healthcare Staffing, we support ethical nurse placement pathways to Ireland, Australia, and New Zealand.
               </p>
             </motion.div>
 

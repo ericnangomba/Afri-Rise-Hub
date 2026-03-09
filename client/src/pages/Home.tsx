@@ -352,7 +352,7 @@ export default function Home() {
                   We are deeply committed to social responsibility by providing soft-skills training, call-centre readiness, and IELTS/OET preparation for unemployed youth, people living with disabilities, and individuals in rehabilitation programmes.
                 </p>
                 <p>
-                  Through our trusted partnership with Silverscope Healthcare Staffing in Ireland, we ethically recruit and prepare qualified nurses for fixed-term roles overseas, with pathways expanding to Australia and New Zealand.
+                  Through trusted partnerships, including Inno-tel and Silverscope Healthcare Staffing in Ireland, we ethically recruit and prepare qualified nurses for fixed-term roles overseas, with pathways expanding to Australia and New Zealand.
                 </p>
               </div>
             </motion.div>
@@ -571,13 +571,15 @@ export default function Home() {
               className="space-y-8"
             >
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">
-                <span>Partnership with</span>
+                <span>Our Partners</span>
+                <span className="font-semibold">Inno-tel</span>
+                <span>&amp;</span>
                 <span className="font-semibold">Silverscope Healthcare Staffing</span>
               </div>
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">Ethical International Healthcare Careers</h2>
                 <p className="text-muted-foreground text-lg leading-relaxed">
-                  Through our trusted partnership, we provide qualified Southern African nurses with ethical pathways to rewarding careers in Ireland, with expansion into Australia and New Zealand.
+                  Through our trusted partners, we provide qualified Southern African nurses with ethical pathways to rewarding careers in Ireland, with expansion into Australia and New Zealand.
                 </p>
               </div>
 
@@ -789,10 +791,10 @@ export default function Home() {
                 <MapPin className="w-4 h-4" /> Cape Town, South Africa
               </p>
               <p className="inline-flex items-center justify-center gap-2">
-                <Mail className="w-4 h-4" /> info@afri-rise.co.za
+                <Mail className="w-4 h-4" /> info@afririse.co.za
               </p>
               <p className="inline-flex items-center justify-center gap-2">
-                <Phone className="w-4 h-4" /> +27 82 044 7004
+                <Phone className="w-4 h-4" /> +27 62 968 3677
               </p>
             </div>
           </motion.div>

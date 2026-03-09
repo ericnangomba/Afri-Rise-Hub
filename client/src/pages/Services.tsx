@@ -98,11 +98,14 @@ const serviceCatalog = [
 ];
 
 const bpoCapabilities = [
-  "Multilingual customer support (voice, email, live chat)",
+  "Customer services and multilingual support (voice, email, live chat)",
   "Data entry and secure back-office processing",
   "Virtual assistance and admin support",
   "Claims processing for insurance and finance workflows",
   "Lead generation and appointment setting campaigns",
+  "Sales and collections training programmes",
+  "Work readiness training for unemployed youth and matriculants",
+  "Soft skills training for workplace readiness",
 ];
 
 export default function Services() {
